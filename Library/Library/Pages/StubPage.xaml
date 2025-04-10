@@ -1,0 +1,11 @@
+﻿<Page x:Class="LibrarySelfService.Pages.StubPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="StubPage">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="StubText" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <Button Content="Назад" Click="Back_Click" Width="100" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
