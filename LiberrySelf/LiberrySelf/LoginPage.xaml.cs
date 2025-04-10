@@ -40,7 +40,7 @@ namespace LiberrySelf
         // Кнопка "Войти"
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            using var db = new LibraryBD();
+            using (var db = new LibraryBD()) ;
             var user = db.Librarians.FirstOrDefault(l => l.Login == Login.Text && l.Password == Password.Password);
 
             if (user != null)
@@ -60,3 +60,4 @@ namespace LiberrySelf
             }
         }
     }
+}

@@ -23,15 +23,15 @@ namespace LiberrySelf
 
         // Проверка ввода
         private void CheckInputs() => ReturnButton.IsEnabled =
-            !string.IsNullOrWhiteSpace(BookId.Text) &&
+            !string.IsNullOrWhiteSpace(BookID.Text) &&
             !string.IsNullOrWhiteSpace(Name.Text) &&
             !string.IsNullOrWhiteSpace(Phone.Text);
 
         // Кнопка "Вернуть"
         private void ReturnButton_Click(object sender, RoutedEventArgs e)
         {
-            using var db = new LibraryBD();
-            var rent = db.Rents.FirstOrDefault(r => r.BookId == int.Parse(BookId.Text) && r.FullName == Name.Text);
+            using ( var db = new LibraryBD()) ;
+            var rent = db.Rents.FirstOrDefault(r => r.BookId == int.Parse(BookID.Text) && r.FullName == Name.Text);
             if (rent != null)
             {
                 db.Rents.Remove(rent);
@@ -40,3 +40,5 @@ namespace LiberrySelf
             Close();
         }
     }
+}
+

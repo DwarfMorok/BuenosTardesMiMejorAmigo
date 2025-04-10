@@ -3,3 +3,12 @@ C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\M
 C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\MainWindow.g.cs
 C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\App.g.cs
 C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\LiberrySelf_MarkupCompile.cache
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\LiberrySelf_Content.g.cs
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\RentPage.baml
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\RentPage.g.cs
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\LibrarianPage.baml
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\LibrarianPage.g.cs
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\FinePage.baml
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\FinePage.g.cs
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\ReturnPage.baml
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\ReturnPage.g.cs

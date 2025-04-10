@@ -28,17 +28,17 @@ namespace LiberrySelf
         // Загрузка списка книг
         private void LoadBooks()
         {
-            using var db = new LibraryBD();
+            using (var db = new LibraryBD()) ;
             BooksList.ItemsSource = db.Books.ToList();
         }
 
         // Добавление новой книги
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            using var db = new LibraryBD();
+            using (var db = new LibraryBD()) ;
             db.Books.Add(new Book
             {
-                Id = int.Parse(BookId.Text),
+                Id = int.Parse(BookIDText),
                 Title = TitleBox.Text,
                 Genre = GenreBox.Text,
                 Year = int.Parse(YearBox.Text)
@@ -52,7 +52,7 @@ namespace LiberrySelf
         {
             if (BooksList.SelectedItem is Book book)
             {
-                using var db = new LibraryBD();
+                using (var db = new LibraryBD()) ;
                 db.Books.Remove(db.Books.Find(book.Id));
                 db.SaveChanges();
                 LoadBooks();
@@ -62,11 +62,11 @@ namespace LiberrySelf
         // Формирование отчета в Word
         private void ReportButton_Click(object sender, RoutedEventArgs e)
         {
-            using var db = new LibraryBD();
+            using (var )db = new LibraryBD() ;
             var books = db.Books.ToList();
             string path = $"report_{DateTime.Now:yyyyMMdd}.docx";
 
-            using var wordDoc = WordprocessingDocument.Create(path, DocumentFormat.OpenXml.WordprocessingDocumentType.Document);
+            using (var wordDoc = WordprocessingDocument.Create(path, DocumentFormat.OpenXml.WordprocessingDocumentType.Document)) ;
             var mainPart = wordDoc.AddMainDocumentPart();
             mainPart.Document = new Document();
             var body = mainPart.Document.AppendChild(new Body());
@@ -112,3 +112,4 @@ namespace LiberrySelf
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlServer("YourConnectionStringHere");
     }
+}

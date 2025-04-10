@@ -26,7 +26,7 @@ namespace LiberrySelf
 
         // Проверка ввода всех данных
         private void CheckInputs() => RentButton.IsEnabled =
-            !string.IsNullOrWhiteSpace(BookId.Text) &&
+            !string.IsNullOrWhiteSpace(BookID.Text) &&
             !string.IsNullOrWhiteSpace(Name.Text) &&
             !string.IsNullOrWhiteSpace(Phone.Text) &&
             ReturnDate.SelectedDate != null;
@@ -34,15 +34,16 @@ namespace LiberrySelf
         // Кнопка "Арендовать"
         private void RentButton_Click(object sender, RoutedEventArgs e)
         {
-            using var db = new LibraryBD();
+            using ( var db = new LibraryBD()) ;
             db.Rents.Add(new Rent
             {
-                BookId = int.Parse(BookId.Text),
+                BookId = int.Parse(BookID.Text),
                 FullName = Name.Text,
-                Phone = Phone.Text,
+                Phone = Phone.text,
                 DueDate = ReturnDate.SelectedDate.Value
             });
             db.SaveChanges();
             Close();
         }
     }
+}

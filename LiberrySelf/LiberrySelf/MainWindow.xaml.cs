@@ -37,4 +37,5 @@ namespace LiberrySelf
         // Кнопка "Библиотекарь"
         private void Librarian_Click(object sender, RoutedEventArgs e) => new LoginPage().Show();
     }
+}
 

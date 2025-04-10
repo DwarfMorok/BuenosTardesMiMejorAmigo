@@ -26,3 +26,5 @@ namespace LiberrySelf
             !string.IsNullOrWhiteSpace(FineNumber.Text) &&
             !string.IsNullOrWhiteSpace(Amount.Text) &&
             !string.IsNullOrWhiteSpace(Phone.Text);
+    }
+}

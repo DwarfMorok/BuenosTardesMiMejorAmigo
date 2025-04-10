@@ -4,10 +4,10 @@
         Title="Страница библиотекаря" Height="500" Width="600">
     <DockPanel>
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10">
-            <TextBox x:Name="BookId" Width="50" Margin="5" PlaceholderText="ID"/>
-            <TextBox x:Name="TitleBox" Width="150" Margin="5" PlaceholderText="Название"/>
-            <TextBox x:Name="GenreBox" Width="100" Margin="5" PlaceholderText="Жанр"/>
-            <TextBox x:Name="YearBox" Width="60" Margin="5" PlaceholderText="Год"/>
+            <TextBox x:Name="BookId" Width="50" Margin="5" Text="ID"/>
+            <TextBox x:Name="TitleBox" Width="150" Margin="5" Text="Название"/>
+            <TextBox x:Name="GenreBox" Width="100" Margin="5" Text="Жанр"/>
+            <TextBox x:Name="YearBox" Width="60" Margin="5" Text="Год"/>
             <Button Content="Добавить" Click="AddButton_Click" Margin="5"/>
             <Button Content="Удалить" Click="DeleteButton_Click" Margin="5"/>
             <Button Content="Отчёт" Click="ReportButton_Click" Margin="5"/>

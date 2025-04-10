@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Оплата штрафа" Height="250" Width="400">
     <StackPanel Margin="20">
-        <TextBox x:Name="FineNumber" PlaceholderText="Номер штрафа" Margin="5" TextChanged="CheckInputs"/>
-        <TextBox x:Name="Amount" PlaceholderText="Сумма" Margin="5" TextChanged="CheckInputs"/>
-        <TextBox x:Name="Phone" PlaceholderText="Телефон" Margin="5" TextChanged="CheckInputs"/>
+        <TextBox x:Name="FineNumber" Text="Номер штрафа" Margin="5" TextChanged="CheckInputs"/>
+        <TextBox x:Name="Amount" Text="Сумма" Margin="5" TextChanged="CheckInputs"/>
+        <TextBox x:Name="Phone" Text="Телефон" Margin="5" TextChanged="CheckInputs"/>
         <Button x:Name="PayButton" Content="Оплатить" Margin="5" IsEnabled="False" Click="PayButton_Click"/>
     </StackPanel>
 </Window>
