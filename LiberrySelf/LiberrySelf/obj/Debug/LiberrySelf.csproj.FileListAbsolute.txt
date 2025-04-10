@@ -1,0 +1,5 @@
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\LiberrySelf.csprojAssemblyReference.cache
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\MainWindow.baml
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\MainWindow.g.cs
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\App.g.cs
+C:\Users\Санчепездол\source\repos\LiberrySelf\LiberrySelf\obj\Debug\LiberrySelf_MarkupCompile.cache

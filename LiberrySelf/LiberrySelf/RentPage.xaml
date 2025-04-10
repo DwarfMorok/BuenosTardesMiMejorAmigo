@@ -1,0 +1,12 @@
+﻿<Window x:Class="RentPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Аренда книги" Height="300" Width="400">
+    <StackPanel Margin="20">
+        <TextBox x:Name="BookId" PlaceholderText="ID книги" Margin="5" TextChanged="CheckInputs"/>
+        <TextBox x:Name="Name" PlaceholderText="ФИО читателя" Margin="5" TextChanged="CheckInputs"/>
+        <TextBox x:Name="Phone" PlaceholderText="Телефон" Margin="5" TextChanged="CheckInputs"/>
+        <DatePicker x:Name="ReturnDate" Margin="5" SelectedDateChanged="CheckInputs"/>
+        <Button x:Name="RentButton" Content="Арендовать" Margin="5" IsEnabled="False" Click="RentButton_Click"/>
+    </StackPanel>
+</Window>
